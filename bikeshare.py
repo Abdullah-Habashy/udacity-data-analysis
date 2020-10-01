@@ -23,7 +23,7 @@ def get_filters():
     while True:
       city = (input("\nChoose the city you would like your results to be filtered by? New York ,Washington  or Chicago ?\n").lower().title())
       if city not in ('New York City', 'Chicago', 'Washington'):
-        print("Ammmmm. Your choice is not precise. Kindly, Try again.")
+        print("Ammmmm. Your choice is not precise. Kindly, Try again please.")
         continue
       else:
         break
