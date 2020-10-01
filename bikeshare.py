@@ -79,7 +79,7 @@ def load_data(city, month, day):
     if month != 'Random':
    	 	# use the index of the months list to get the corresponding int
         months = ['January', 'February', 'March', 'April', 'May', 'June']
-        month = months.index(month) + 1
+        month = months.index(month) + 2
 
     	# filter by month to create the new dataframe
         df = df[df['month'] == month]
