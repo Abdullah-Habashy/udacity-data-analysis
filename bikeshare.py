@@ -52,6 +52,8 @@ def get_filters():
     return city, month, day
 
 
+print('Let us print again :)' + '-'*40)
+    return city, month, day
 
 def load_data(city, month, day):
 
@@ -96,7 +98,7 @@ def load_data(city, month, day):
 def time_stats(df):
     """Displays statistics on the most frequent times of travel."""
 
-    print('\nLet\'s know The Most common Times of hiring bikes to travel...\n')
+    print('\nLet\'s know The Most common Times of hiring bikes to travel in america...\n')
     start_time = time.time()
 
 
