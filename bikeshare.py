@@ -248,7 +248,7 @@ def main():
         trip_duration_stats(df)
         user_stats(df)
 
-        restart = input('\nWould you like to try our  intelligent data analysis program again? Enter yes or no.\n')
+        restart = input('\nWould you like to try our  fast data analysis program again? Enter yes or no.\n')
         if restart.lower() != 'yes':
             break
 
