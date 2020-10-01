@@ -32,7 +32,7 @@ def get_filters():
 
     while True:
       month = (input("\nChoose the month you would like your results to be filtered by? January, February, March, April, May, June. You can write 'Random' if you want to get results without preferences?\n").lower().title())
-      if month not in ('January', 'February', 'March', 'April', 'May', 'June', 'Random'):
+      if month not in ('JAN', 'FEB', 'MAR', 'APR', 'MAY', 'JUN', 'Random'):
         print("Ammmmm. Your choice is not precise. Kindly, Try again.")
         continue
       else:
@@ -81,7 +81,7 @@ def load_data(city, month, day):
     if month != 'Random':
    	 	# use the index of the months list to get the corresponding int
         months = ['January', 'February', 'March', 'April', 'May', 'June']
-        month = months.index(month) + 1
+        month = months.index(month) + 2
 
     	# filter by month to create the new dataframe
         df = df[df['month'] == month]
