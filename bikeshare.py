@@ -23,7 +23,7 @@ def get_filters():
     while True:
       city = (input("\nChoose the city you would like your results to be filtered by? New York ,Washington  or Chicago ?\n").lower().title())
       if city not in ('New York City', 'Chicago', 'Washington'):
-        print("Ammmmm. Your choice is not precise. Kindly, Try again.")
+        print("Ammmmm. Your choice is not precise. Kindly, Try again please.")
         continue
       else:
         break
@@ -52,6 +52,8 @@ def get_filters():
     return city, month, day
 
 
+print('Let us print again :)' + '-'*40)
+    return city, month, day
 
 def load_data(city, month, day):
 
@@ -96,7 +98,7 @@ def load_data(city, month, day):
 def time_stats(df):
     """Displays statistics on the most frequent times of travel."""
 
-    print('\nLet\'s know The Most common Times of hiring bikes to travel...\n')
+    print('\nLet\'s know The Most common Times of hiring bikes to travel in america...\n')
     start_time = time.time()
 
 
@@ -156,19 +158,19 @@ def station_stats(df):
 def trip_duration_stats(df):
     """Displays statistics on the total and average trip duration."""
 
-    print('\nCalculating Trip Duration...\n')
+    print('\nCalculating Trip Duration please wait little...\n')
     start_time = time.time()
 
     # TO DO: display total travel time
 
     Total_Time = sum(df['Trip Duration'])
-    print('Total  time of the trip:', Total_Time/86400, " Days")
+    print('Total  time of the trip you want to know:', Total_Time/86400, " Days")
 
 
     # TO DO: display mean travel time
 
     Mean_Time = df['Trip Duration'].mean()
-    print('Mean travel time:', Mean_Time/60, " Minutes")
+    print('Mean travel time you want to know :', Mean_Time/60, " Minutes")
 
 
     print("\nThis took %s seconds." % (time.time() - start_time))
@@ -246,7 +248,7 @@ def main():
         trip_duration_stats(df)
         user_stats(df)
 
-        restart = input('\nWould you like to try our  intelligent data analysis program again? Enter yes or no.\n')
+        restart = input('\nWould you like to try our  fast data analysis program again? Enter yes or no.\n')
         if restart.lower() != 'yes':
             break
 
